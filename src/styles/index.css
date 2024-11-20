@@ -1,0 +1,91 @@
+/* Tailwind Base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+html,
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb; /* Light background for the app */
+  color: #333; /* Dark text for better readability */
+}
+
+/* Body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Customize forms for consistency across browsers */
+input,
+textarea,
+select {
+  border-radius: 0.375rem; /* Rounded corners */
+  padding: 0.5rem;
+  border: 1px solid #d1d5db; /* Border color for form fields */
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #4f46e5; /* Focus state color */
+}
+
+/* General styling for form labels */
+label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151; /* Darker color for labels */
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Customize button styles */
+button {
+  background-color: #4f46e5; /* Tailwind blue color */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4338ca; /* Darker shade for hover */
+}
+
+/* Tailwind Container customization */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 1rem;
+}
+
+/* Form components styling */
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Style for form sections (inputs, selects, textareas) */
+.form-section {
+  margin-bottom: 1.5rem;
+}
+
+/* Custom error styling for form validation */
+.error-message {
+  color: #e11d48; /* Tailwind red for errors */
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
